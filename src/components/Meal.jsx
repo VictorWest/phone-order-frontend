@@ -6,7 +6,7 @@ export default function Meal({handleAddToCart}) {
     const [ isLoaded, setIsLoaded ] = useState(true)
     const [ availableMeals, setAvailableMeals ] = useState([])
     useEffect(() => {
-        fetch("http://localhost:3000/meals")
+        fetch("https://react-food-app-backend.onrender.com/meals")
         .then(response => response.json())
         .then(data =>{
             setAvailableMeals([...data])
