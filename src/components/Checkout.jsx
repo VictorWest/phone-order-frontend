@@ -51,12 +51,12 @@ const Checkout = forwardRef(function Checkout({handleCheckoutClose}, ref) {
         <input type="email" id='email' name='email' required/>
         <label htmlFor="street">Street</label>
         <input type="text" id='street' name='street' required/>  
-        <div className='flex'>
-          <div>
+        <div className='flex gap-3 max-[540px]:flex-col'>
+          <div className='max-[540px]:flex max-[540px]:flex-col'>
             <label htmlFor="postal-code">Postal Code</label>
             <input type="text" id='postal-code' name='postal-code' required/>            
           </div>
-          <div>
+          <div className='max-[540px]:flex max-[540px]:flex-col'>
             <label htmlFor="city">City</label>
             <input type="text" id='city' name='city' required/>            
           </div>

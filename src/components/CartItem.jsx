@@ -13,7 +13,7 @@ const CartItem = forwardRef(function CartItem({item}, ref) {
         cartCtx.removeItem(id)
     }
   return (
-    <div className="flex justify-between gap-[10rem] py-2">
+    <div className="flex justify-between ">
         <p>{name} - {quantity} x ${price}</p>
         <div className="cart-item-actions">
             <button onClick={handleCountDecrease}>-</button>
