@@ -12,7 +12,7 @@ export default function Header({handleCartOpen}) {
     <div id="main-header" className='max-[540px]:flex max-[540px]:flex-col'>
         <div id="title">
             <img src={logoJPG} alt="logo"  />
-            <h1>REACTFOOD</h1>
+            <h1>DEVICE APP</h1>
         </div>
         <button onClick={handleCartOpen} className='hover:text-[#FFAB04]'>Cart ({cartLength})</button>
     </div>

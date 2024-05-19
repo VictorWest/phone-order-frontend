@@ -80,6 +80,7 @@ h1 {
 
 .meal-item img {
   width: 100%;
+  /* padding: 2rem; */
   height: 20rem;
   object-fit: cover;
 }

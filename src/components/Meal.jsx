@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
-import CartModal from './CartModal';
 import UnitMeal from './UnitMeal';
 
 export default function Meal({handleAddToCart}) {
     const [ isLoaded, setIsLoaded ] = useState(true)
     const [ availableMeals, setAvailableMeals ] = useState([])
     useEffect(() => {
-        fetch("https://react-food-app-backend.onrender.com/meals")
+        // fetch("https://react-food-app-backend.onrender.com/meals")
+        fetch("http://localhost:3000/meals")
         .then(response => response.json())
         .then(data =>{
             setAvailableMeals([...data])
@@ -17,7 +17,7 @@ export default function Meal({handleAddToCart}) {
   return (
     <>
         {!isLoaded ? <div id="meals">
-            {availableMeals.map((item) => {
+            {availableMeals.map((item, i) => {
                 return <UnitMeal key={item.id} item={item} />
             })}
             

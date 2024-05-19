@@ -11,10 +11,11 @@ export default function UnitMeal({ item }) {
   }
 
   return (
-    <div className="flex flex-col items-center meal-item" >
+    <div className="flex flex-col items-center meal-item " >
       <article>
         <div>
           <img src={`https://react-food-app-backend.onrender.com/${image}`} alt=""/>
+          {/* <img className="mx-auto" src={`http://localhost:3000/${image}`} alt=""/> */}
           <h3 id={name}>{name}</h3>
           <div className="meal-item-price" id={price}>${price}</div>
           <div className="meal-item-description" id={description}>{description}</div>          
